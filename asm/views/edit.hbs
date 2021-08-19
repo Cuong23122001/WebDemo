@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Pet</title>
+</head>
+<body>
+    <h1>Edit Pet</h1><p> <a href="/">Home<a>
+    <form action="/update" method="post">
+        <input type="hidden" name="txtId" value="{{pet._id}}">
+        Name <input type="text" name="txtName" value="{{pet.name}}">
+        <br>
+        Age <input type="text" name ="txtAge" value="{{pet.age}}">
+        <br>
+        Image <input type="text" name="txtImage" value="{{pet.image}}">
+        <br>
+        Price <input type="text" name="txtPrice" value="{{pet.price}}">
+        <input type="submit" value="Update">
+    </form>
+</body>
+</html>
